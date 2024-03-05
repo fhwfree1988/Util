@@ -1,0 +1,15 @@
+
+copy war:
+	scp D:\Foad\Projects\ProjectSaleHome\server\target\site-0.0.1-SNAPSHOT.war fuadhr@192.168.242.128:/tmp
+	sudo cp /tmp/site-0.0.1-SNAPSHOT.war /opt/tomcat/webapps/
+
+start,stop tomcat or see status:
+	sudo systemctl restart tomcat
+	sudo systemctl stop tomcat
+	sudo systemctl start tomcat
+	sudo systemctl status tomcat
+
+ sudo /opt/tomcat/bin/startup.sh; tail -f /opt/tomcat/logs/catalina.out
+
+https://superuser.com/questions/513159/how-to-remove-systemd-services
+

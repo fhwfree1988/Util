@@ -1,0 +1,10 @@
+https://github.com/bepass-org/wireguard-go/releases
+https://github.com/bepass-org
+-------------------------------------------
+
+Command:
+-- gool baraye tahrime kharej
+.\warp.exe -scan -gool
+.\warp.exe -scan -v -gool
+.\warp.exe -scan -v
+.\warp.exe -scan -v -gool

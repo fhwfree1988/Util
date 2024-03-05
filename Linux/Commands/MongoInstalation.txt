@@ -1,0 +1,24 @@
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+-------------------------------------------------------------------------------------
+https://askubuntu.com/questions/1416430/unable-to-locate-package-mongodb-org-in-ubuntu-22-04
+-------------------------------------------------------------------------------------
+wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc |  gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg > /dev/null 
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+sudo apt update
+sudo apt install mongodb-org
+
+----------------------------------------------------------------------------------------
+sudo systemctl restart mongod
+-------------------------------------------------------------------
+mongosh
+------------------------------------------------
+sudo service mongod stop
+------------------------------------------
+sudo netstat -tuln | grep 27017
+
+
+db.getSiblingDB("admin").createUser({
+   user: "root",
+   pwd: "root", 
+   roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+})

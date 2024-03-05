@@ -1,0 +1,21 @@
+https://cheatography.com/davechild/cheat-sheets/linux-command-line/
+https://cheatography.com/tag/ubuntu/
+---------------------------------------------------
+gettin root access:
+	sudo su
+	
+برای بیرون آمدن از دسترسی root:
+ press Ctrl+D
+
+delete folder:
+ 	cd /opt/tomcat/webapps
+	sudo rm -r tomcat
+	sudo rm -r ROOT
+
+
+sudo systemctl list-units --type=service | grep tomcat
+sudo systemctl deamon-reload
+
+sudo shutdown -h now
+
+sudo netstat -tuln | grep 27017

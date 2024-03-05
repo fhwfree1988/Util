@@ -1,0 +1,14 @@
+* sudo lshw -class network
+* ip a
+
+----------------------------
+ssh fuadhr@192.168.242.128
+
+
+----------------------------------------
+copy file to server from local.
+open terminal from local and send a file to server by this command:
+
+scp D:\Foad\Projects\ProjectSaleHome\server\target\site-0.0.1-SNAPSHOT.war fuadhr@192.168.242.128:/tmp
+
+------------------------------------------------------------------
