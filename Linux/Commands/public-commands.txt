@@ -17,5 +17,6 @@ sudo systemctl list-units --type=service | grep tomcat
 sudo systemctl deamon-reload
 
 sudo shutdown -h now
+sudo reboot -h now
 
 sudo netstat -tuln | grep 27017

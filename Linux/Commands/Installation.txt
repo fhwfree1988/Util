@@ -6,6 +6,8 @@ Installing a deb file:
 	sudo dpkg -i filename.deb
 
 Tomcat:
+	https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
+
 	https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-10-on-ubuntu-20-04
 	1) sudo useradd -m -d /opt/tomcat -U -s /bin/false tomcat
 	2) sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.tar.gz 
