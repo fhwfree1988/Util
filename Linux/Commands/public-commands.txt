@@ -20,3 +20,5 @@ sudo shutdown -h now
 sudo reboot -h now
 
 sudo netstat -tuln | grep 27017
+
+curl http://192.168.242.128:8080/food-0.0.1-SNAPSHOT/customer/name

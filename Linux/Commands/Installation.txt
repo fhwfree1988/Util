@@ -7,11 +7,13 @@ Installing a deb file:
 
 Tomcat:
 	https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
+	https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-11.0.0-M17.tar.gz
+
 
 	https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-10-on-ubuntu-20-04
 	1) sudo useradd -m -d /opt/tomcat -U -s /bin/false tomcat
-	2) sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.tar.gz 
-	3) sudo tar xzvf apache-tomcat-10.1.19.tar.gz -C /opt/tomcat --strip-components=1
+	2) sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-11.0.0-M17.tar.gz 
+	3) sudo tar xzvf /tmp/apache-tomcat-11.0.0-M17.tar.gz -C /opt/tomcat --strip-components=1
 	4) sudo chown -R tomcat:tomcat /opt/tomcat/
 	5) sudo chmod -R u+x /opt/tomcat/bin
 
@@ -46,6 +48,7 @@ WantedBy=multi-user.target
 #######################
 
 	6)sudo systemctl daemon-reload
+	7)https://www.oreilly.com/library/view/tomcat-the-definitive/9780596101060/ch01s03.html
 
 VPN:
 	https://github.com/hiddify/hiddify-next/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C%E2%80%8C%D9%86%DA%A9%D8%B3%D8%AA

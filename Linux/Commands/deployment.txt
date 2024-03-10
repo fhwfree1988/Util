@@ -1,6 +1,7 @@
 
 copy war:
-	scp D:\Foad\Projects\ProjectSaleHome\server\target\site-0.0.1-SNAPSHOT.war fuadhr@192.168.242.128:/tmp
+	scp D:\Software\Development\apache-tomcat-11.0.0-M17.tar.gz fuadhr@192.168.242.128:/tmp
+	scp D:\Software\Development\apache-tomcat-11.0.0-M17.tar.gz fuadhr@192.168.242.128:/tmp
 	scp D:\Foad\Projects\FoodShopServer\FoodShopServer\target\food-0.0.1-SNAPSHOT.war fuadhr@192.168.242.128:/tmp
 
 	sudo cp /tmp/food-0.0.1-SNAPSHOT.war /opt/tomcat/webapps/
